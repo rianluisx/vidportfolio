@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        
+        
+        <title>Rian Mabait</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+        />
+
+        <link rel="icon" href="images/rian.svg">
+
+        <script src="https://kit.fontawesome.com/9160a7e4a9.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+ 
+
+        <!-- navbar -->
+
+        <div id="header">
+            <div class="container">
+                <nav id="navbar">
+                    <div class="logo"> RIAN <span>MABAIT </span></a></div>
+                    <ul id="sidebar">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <i class="fas fa-xmark" onclick="closemnu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmnu()"></i>
+                </nav>
+
+                <div class="head-text">
+                    <p>Video Editor</p>
+                    <h1 id="h2">
+                        Hi, I'm <span>Rian</span><br />
+                        from the Philippines.
+                    </h1>
+                </div>
+
+                <div class="head-text2">
+                    <p>Video Editor</p>
+                    <h1>
+                        Hi, I'm <span>Rian</span><br />
+                        from the Philippines.
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+    
+        <!-- about -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col1">
+                        <h1 class="sub-title"> About me </h1>
+                        <p>
+                        If you're looking for someone that will edit your YouTube videos for you for an afforadble price, then I'm the right person for you!
+                        A Philippines based freelance video editor that has expertise on creating creative videos. 
+                        Interested in different editing software and has a deep understanding in the concepts of video editing.
+                        Has hands-on experience on Adobe Premiere Pro and Adobe Photoshop. My hobbies are playing league of legends, programming,
+                        and editing videos.
+                        </p>
+                        <div class="tab-links">
+                            <p class="titles active-title" onclick="opentab('skills')">Skills</p>
+                            <p class="titles active-title" onclick="opentab('projects')">Projects</p>
+                            <p class="titles active-title" onclick="opentab('education')">Education</p>
+                        </div>
+                    
+                        <div class="content active-tab" id="skills">
+                            <ul>
+                                <li><span>Video Editing</span><br>Expertise on Using Adobe Premiere Pro.</li>
+                                <li><span>Photo Editing</span><br>Expertise on Using Adobe Photoshop.</li>
+                                <li><span>Web Development/Web Design</span><br>Has hands-on experience on HTML, CSS, Javascript.</li>
+                                <li><span>Basic Programming</span><br>Has hands-on experience on programming languages such as Python and C.</li>
+                            </ul>
+                        </div>
+                        <div class="content" id="projects">
+                            <ul>
+                                <li><span>Music Video Commission</span><br>Commission for a client.</li>
+                                <li><span>Kasimanwa Vlog</span><br>A vlog about poeple's perception towards sex and gender.</li>
+                                <li><span>Mythbusters</span><br>Common misconceptions about computer science.</li>
+                                <li><span>Wika, Wika, Paano ka ginawa?</span><br> Formulation of historical records of events in the history of the Philippines' National Language.</li>
+
+                            </ul>
+                        </div>
+                        <div class="content" id="education">
+                            <ul>
+                                
+                                <li><span>2016-2022</span><br>Regional Science High School for Region VI | High Honors.</li>
+                                <li><span>2022-Current</span><br>University of the Philippines in the Visayas | BS Computer Science.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <img src="images/IMG-0799.jpg">
+                    </div>
+
+                    
+                </div>
+
+                
+
+            </div>
+            
+        </div>
+
+        <!-- projects -->
+        
+                
+        <div class="project-gallery" id="project">      
+            <div class="container">
+                <h1 class="sub-title" id="myproj"> My Projects </h1>
+                <div class="featured">
+                    <div class="video-card" onclick="playVideo('https://drive.google.com/file/d/1fwo_fMXO4dnUS1Ac365Sgi7vHCvKlJ40/view')"> 
+                        <img src="images/thumbnail1.png">
+                        <h3> Wika, Wika, Paano ka ginawa?</h3>
+                        <img src="images/download-removebg-preview.png" class="play-icn">
+                    </div>
+                </div>
+        
+                <div class="related">
+                    <div class="video-card" onclick="playVideo('https://drive.google.com/file/d/1Di5_7cRODFIpEa3apTukb2YD41h7xhdh/view?usp=drive_link')">
+                        <div class="thumbnail">
+                            <img src="images/thumbnail2.png">
+                            <h3> Kasimanwa Vlog</h3>
+                            <img src="images/download-removebg-preview.png" class="play-icn">
+                        </div>
+                    </div>
+        
+                    <div class="video-card" onclick="playVideo('https://drive.google.com/file/d/1d880n6HH7fWb2Ai4auezt6k2MDMnEtUd/view?usp=sharing')"> 
+                        <div class="thumbnail">
+                            <img src="images/thumbnail3.png">
+                            <h3> Mythbusters</h3>
+                            <img src="images/download-removebg-preview.png" class="play-icn">
+                        </div>
+                    </div>
+        
+                    <div class="video-card" onclick="playVideo('https://drive.google.com/file/d/1BW6h-6WMHU8psyXPKydEUa2P01zSM3q0/view?usp=sharing')"> 
+                        <div class="thumbnail">
+                            <img src="images/thumbnail4.png">
+                            <h3> Music Video</h3>
+                            <img src="images/download-removebg-preview.png" class="play-icn">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="videos">
+                    <div class="videoplayer"></div>
+                    <div class="close">+</div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+        <!-- contacts -->
+        <div class="contacts" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="left">
+                        <h1 class="sub-title"> My Contacts </h1>
+                        <p><i class="fa-solid fa-envelope"></i><a href="mailto:rcmabait@up.edu.ph" id="email">rcmabait@up.edu.ph</a></p>
+                        <p> <i class="fa-solid fa-phone"></i>09604245212</p>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/profile.php?id=100006355621426" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com/rianluisx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/rianluisx" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
+                            <a href="https://www.linkedin.com/in/rian-luis-mabait-a1044626b/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" placeholder="Your message" rows="6"></textarea>
+                            <button type="submit" id="submit">Submit</button>
+                        </form>
+
+                        <span id="sent"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+      
+
+        
+        
+        <script defer src="script.js"></script>
+
+
+  
+    </body>
+</html>

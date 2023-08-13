@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    text-size-adjust: auto;
+}
+
+
+body {
+    background: black;
+    color: white;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*
+#navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+
+}
+*/
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/IMG-2638-removebg-preview.png); 
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left;
+}
+
+
+
+.container{
+    padding: 10px 8%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    padding: 30px 5%;
+    
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.head-text {
+    padding-left: 47%;
+    padding-top: 12%;
+}
+
+.head-text p{
+    font-size: 25px;
+    font-weight: 10px;
+
+}
+
+.head-text h1{
+    font-size: 60px;
+}
+
+.head-text h1 span {
+    color: #ff004f;
+}
+
+.head-text2 h1 span {
+    color: #ff004f;
+}
+
+.head-text2 h1{
+    padding-top: 7px;
+}
+
+.logo a {
+    color: white;
+    display: inline;
+}
+
+.logo span {
+    color: #ff004f;
+    display: inline;
+}
+
+nav li a:hover{
+    color: #ff004f;
+    transition: 0.5s;
+}
+
+
+/* ABOUT */
+
+.about{
+    padding-top: 75px;
+
+    padding-bottom: 20px;
+    color:  rgba(255,255,255,0.8);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+.col1 p{
+    color: white;
+    padding-top: 20px;
+}
+.col2{
+    flex-basis: 35%;
+}
+
+.col2 img{
+    width: 100%;
+    border-radius: 30px; 
+    object-fit: cover;
+}
+
+.col1{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+    
+}
+
+.tab-links{
+    display: flex;
+    margin: 25px 0 35px;
+}
+
+.titles{
+    position: relative;
+    cursor: pointer;
+    margin-right: 45px;
+    font-size: 19px;
+    font-weight: 400;
+    color: white;
+}
+
+.titles::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    background: #ff004f;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.titles.active-title:hover::after{
+    width: 50%;
+}
+
+.content ul li{
+    list-style: none;
+    margin: 30px 0;
+    color: white;
+    font-size: 13px;
+    
+}
+
+.content ul li span{
+    color:#ff004f;
+    font-size: 15px;
+}
+
+.content{
+    display: none;
+}
+
+.content.active-tab{
+    display: block;
+    
+}
+
+/* projects */
+
+.project-gallery{
+    width: 60%;
+    padding-bottom: 70px;
+
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+
+.project-gallery img{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.project-gallery h2{
+    font-size: 25px;
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+}
+
+.project-gallery .featured .video-card{
+    position: relative;
+}
+
+.project-gallery .featured .video-card .play-icn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    opacity: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.project-gallery .featured .video-card h3{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 30px;
+    background-image: linear-gradient(45deg, #ff004f, transparent);
+    margin: 0;
+
+}
+
+.project-gallery .related{
+    margin-top: 5px;
+    display: flex;
+    gap: 7px;
+
+}
+
+.project-gallery .related .thumbnail{
+    position: relative;
+}
+
+.project-gallery .related .thumbnail .play-icn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    opacity: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.project-gallery .related .video-card h3{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 14px;
+    background-image: linear-gradient(45deg, #ff004f, transparent);
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+
+}
+
+.video-card{
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.videos{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.videos .videoplayer{
+    max-width: 100%;
+    max-height: 100vh;
+    
+}
+
+.videos .close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 60px;
+    padding: 0 12px;
+    line-height: 0.8;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotateZ(45deg);
+}
+
+.videos.active{
+    display: flex;
+
+}
+
+.videos{
+    display: none;
+}
+
+/* contacts */
+
+
+.contacts{
+    padding-bottom: 40px;
+}
+
+
+
+.left{
+    flex-basis: 35%;   
+}
+
+.right{
+    flex-basis: 60%;
+   
+    
+}
+
+.left p{
+    margin-top: 30px;
+}
+
+.left p i{
+    color: #ff004f;
+    margin-right: 13px;
+    font-size: 20px;
+}
+
+.icons{
+    margin-top: 30px;
+}
+
+.icons a{
+    color: #ababab;
+    margin-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.icons a:hover{
+    transform: translateY(-7px);
+    color: #ff004f;
+    
+}
+
+.right button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 0, 79);
+}
+.right button:hover{
+    background-color: rgba(255, 0, 79, 0.8);
+}
+
+.right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    padding: 15px;
+    margin: 15px 0;
+    border: 0;
+    outline: none;
+    width: 100%;
+    background: #262626;
+    color: white
+    
+}
+
+.head-text2{
+    display: none;
+}
+
+
+.fa-bars{
+    cursor: pointer;
+}
+
+nav .fas{
+    display: none;
+}
+
+
+#sent{
+    color: white;
+    padding-top: 20px;
+    display: block;
+}
+
+#email{
+    color: white;
+}
+
+#email:hover{
+    color: #ff004f;
+}
+
+
+
+/* Media Screen Projects */
+
+
+
+@media only screen and (max-width: 800px){
+    .project-gallery{
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .vids .vid-player{
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .project-gallery .related{
+        flex-direction: column;
+    }
+
+    .project-gallery .related .video-card{
+        margin: 7px 0;
+    }
+
+    .project-gallery .related .video-card h3{
+        line-height: 1.3;
+        font-size: 13px;
+    }
+
+    .project-gallery .related .video-card h3{
+        line-height: 1.3;
+        font-size: 10px;
+        
+        
+    }
+
+    .project-gallery .featured .video-card h3{
+        line-height: 0.1;
+        font-size: 10px;
+    }
+
+    .project-gallery .container h1{
+        text-align: center;
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    #header{
+        background-image: url(images/IMG-2638-removebg-preview.png);
+        background-size: 650px;
+        height: 100vh;
+        
+    }
+
+    .head-text h1{
+        font-size: 45px;
+    }
+
+    .head-text p{
+        font-size: 20px;
+    }
+
+    .head-text{
+        width: 100%;
+        padding-left: 530px;
+        text-align: center;
+        padding-top: 200px;
+    }
+
+    .project-gallery{
+        width: 80%;
+        padding: 0px 15px;
+        padding-bottom: 50px;
+    }
+
+    .vids .vid-player{
+        width: 100vh;
+    }
+
+    .about{
+        width: 100%;
+    }
+
+    .about .content ul li{
+        font-size: 15px;
+    }
+
+    .col1 p{
+        text-align: justify;
+    }
+
+    .contacts .left h1{
+        font-size: 40px;
+    }
+
+    nav ul li{
+        margin: 10px 20px;
+        display: inline;
+    }
+
+    nav ul li a{
+        font-size: 17px;
+    }
+
+    .logo{
+        font-size: 17px
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+    #header{
+        background-image: url(images/IMG-2638-removebg-preview\ -\ Copy.png);
+        background-size: 135%;
+        height: 100vh
+        
+    }
+
+
+
+    .col2 img{
+        object-fit: cover;
+    }
+
+    #myproj{
+        font-size: 30px
+    }
+
+    .head-text{
+        display: none;
+    }
+
+    .head-text{
+        display: none;
+    }
+
+    .head-text2{
+        display: block;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 400px;
+    
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.3s;
+    
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+
+    nav ul .fas{
+        top: 25px;
+        left: 25px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+
+
+    nav li a:hover{
+        color: black;
+
+    }
+    
+    .sub-title{
+        font-size: 45px;
+    }
+
+    .col1, .col2{
+        flex-basis: 100%;
+    }
+
+
+    .about{
+        padding-top: 25px;
+    }
+
+    .about .sub-title{
+        text-align: center;
+    }
+
+    .about p{
+        font-size: 16px;
+    }
+
+    .col1 p{
+        padding-top: 20px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    
+    .tab-links .titles{
+        font-size: 15px;
+        margin-right: 20px; 
+    }
+
+  
+    .left, .right{
+        flex-basis: 100%;
+    }
+
+    .right{
+        padding-bottom: 20px;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .contacts{
+        padding: 20px;
+    }
+
+    .contacts .sub-title{
+        text-align: center;
+    }
+
+    .btn{
+        display: block;
+
+    }
+
+  
+}
+
+
+
