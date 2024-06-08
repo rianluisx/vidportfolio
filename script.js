@@ -88,7 +88,7 @@ form.addEventListener('submit', e => {
         sent.innerHTML = "Submitted Successfully!"
         setTimeout(function(){
             sent.innerHTML = ""
-        }, 5000)
+        }, 500)
         form.reset()
     })
     .catch(error => console.error('Error!', error.message))
