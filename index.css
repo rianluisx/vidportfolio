@@ -441,6 +441,16 @@ nav .fas{
     color: #ff004f;
 }
 
+footer{
+    background-color: #ff004f;
+    height: 40px;
+    font-size: 15px;
+}
+
+.footer-content{
+    padding: 10px 0;
+    text-align: center;
+}
 
 
 /* Media Screen Projects */
@@ -456,6 +466,19 @@ nav .fas{
     .vids .vid-player{
         width: 100vw;
     }
+
+    .right .center-btn{
+        text-align: center;
+    }
+
+    footer{
+        overflow-x: hidden;
+    }
+
+    .col2{
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 550px){
@@ -465,6 +488,10 @@ nav .fas{
 
     .project-gallery .related .video-card{
         margin: 7px 0;
+    }
+
+    footer{
+        overflow-x: hidden;
     }
 
     .project-gallery .related .video-card h3{
@@ -489,6 +516,15 @@ nav .fas{
         font-size: 10px;
         padding-bottom: 20px;
     }
+
+    .left{
+        text-align: center;
+    }
+
+    .col2{
+        display: none;
+    }
+
 }
 
 
